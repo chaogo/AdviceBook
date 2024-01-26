@@ -55,6 +55,16 @@ export default function App() {
       <h1>{advice}</h1>
       {imageUrl && <img src={imageUrl} alt="Generated from DALL-E" />}
       <Message count={count} />
+      <p
+        style={{
+          fontSize: "12px",
+          position: "absolute",
+          bottom: "10px",
+          right: "10px",
+        }}
+      >
+        @by Chao Tang
+      </p>
     </div>
   );
 }
