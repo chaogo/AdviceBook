@@ -55,16 +55,7 @@ export default function App() {
       <h1>{advice}</h1>
       {imageUrl && <img src={imageUrl} alt="Generated from DALL-E" />}
       <Message count={count} />
-      <p
-        style={{
-          fontSize: "12px",
-          position: "absolute",
-          bottom: "10px",
-          right: "10px",
-        }}
-      >
-        @by Chao Tang
-      </p>
+      <Footer />
     </div>
   );
 }
@@ -73,6 +64,20 @@ function Message(props) {
   return (
     <p>
       You have read <strong>{props.count}</strong> pieces of advice
+    </p>
+  );
+}
+
+function Footer() {
+  return (
+    <p
+      style={{
+        fontSize: "12px",
+        marginTop: "auto",
+        textAlign: "right",
+      }}
+    >
+      @by Chao Tang
     </p>
   );
 }
