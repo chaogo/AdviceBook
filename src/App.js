@@ -37,7 +37,21 @@ export default function App() {
 
   return (
     <div>
-      <button onClick={getAdvice}>Get advice</button>
+      <button
+        style={{
+          padding: "10px 15px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          backgroundColor: "#4CAF50",
+          color: "white",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}
+        onClick={getAdvice}
+      >
+        Get Advice
+      </button>
       <h1>{advice}</h1>
       {imageUrl && <img src={imageUrl} alt="Generated from DALL-E" />}
       <Message count={count} />
